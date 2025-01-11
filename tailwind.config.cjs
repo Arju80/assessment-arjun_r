@@ -6,7 +6,10 @@ module.exports = {
     screens: {
       sm: { max: "600px" },
       xs: { max: "425px" },
+      xxs: { max: "375px" },
       m: { max: "800px" },
+      lg: { max: "1024px" },
+      xl: { max: "1280px" },
     },
     extend: {
       colors: {
@@ -28,13 +31,13 @@ module.exports = {
       fontSize: {
         // Add custom font sizes (outside of tailwind)
       },
-      letterSpacing: theme => ({
+      letterSpacing: (theme) => ({
         ...theme("width"),
       }),
-      lineHeight: theme => ({
+      lineHeight: (theme) => ({
         ...theme("width"),
       }),
-      maxWidth: theme => ({
+      maxWidth: (theme) => ({
         ...theme("width"),
         xs: "160px",
         sm: "192px",
@@ -48,10 +51,10 @@ module.exports = {
         "6xl": "576px",
         "7xl": "640px",
       }),
-      minHeight: theme => ({
+      minHeight: (theme) => ({
         ...theme("width"),
       }),
-      minWidth: theme => ({
+      minWidth: (theme) => ({
         ...theme("width"),
       }),
     },

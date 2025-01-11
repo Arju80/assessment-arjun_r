@@ -1,5 +1,43 @@
-<table class="w-full">
+<table class="w-full align-center-table">
   <tr>
-    <td>section-02</td>
+    <td class="w-full px-[20px]">
+      <table class="w-full">
+        <!-- Table Row 1 (Image) -->
+        <tr>
+          <td class="align-center-table">
+            <x-image
+              class="w-[560px] max-w-[560px] sm:w-full"
+              imgUrl="./image-1.png"
+              alt="banner"
+            />
+          </td>
+        </tr>
+        <!-- Table Row 2 (Heading Text) -->
+        <tr>
+          <td
+            class="text-[#005555] text-[24px] leading-[28px] py-[20px] text-center font-bold sm:pt-[30px]"
+          >
+            Excepteur sint occaecat cupidatat
+          </td>
+        </tr>
+        <!-- Table Row 3 (Description Text) -->
+        <tr>
+          <td
+            class="text-[#444444] text-[16px] leading-[18px] px-[47px] text-center sm:px-[20px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </td>
+        </tr>
+        <!-- CTA -->
+        <tr>
+          <td>
+            <x-fragments.fragment-01 />
+          </td>
+        </tr>
+      </table>
+    </td>
   </tr>
 </table>

@@ -1,5 +1,28 @@
-<table class="w-full">
+<table class="w-full align-center-table">
   <tr>
-    <td>section-01</td>
+    <td class="px-[20px]">
+      <table class="w-full">
+        <!-- Table Row 1 -->
+        <tr>
+          <!-- First Column (Image) -->
+          <td class="w-[120px] sm:w-[210px] py-[15px]">
+            <x-image
+              class="w-[120px] sm:w-full"
+              imgUrl="./image-1.png"
+              alt="Logo"
+            />
+          </td>
+          <!-- Second Column (Text Content) -->
+          <td
+            class="w-[460px] pl-[15px] text-[#002B2B] text-[12px] leading-[14px] text-left sm:text-[12px] sm:leading-[14px]"
+          >
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </td>
+          <!-- Third Column (Spacer) -->
+          <td class="w-[100px] m:py-[10px] sm:hidden block"></td>
+        </tr>
+      </table>
+    </td>
   </tr>
 </table>
